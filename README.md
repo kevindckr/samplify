@@ -40,7 +40,7 @@ To install Samplify, simply clone the repository and run the setup.py script:
 
 Users are responsible for downloading supported dataset data. Original sources are:
 
-- GRSS18: https://hyperspectral.ee.uh.edu/?page_id=1075
+- GRSS18: https://machinelearning.ee.uh.edu/2018-ieee-grss-data-fusion-challenge-fusion-of-multispectral-lidar-and-hyperspectral-data/
 - GRSS13: https://figshare.com/articles/dataset/GRSS_HOS_MAT/16528845
 - All Others: https://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes
 
@@ -123,13 +123,19 @@ This project is licensed under the MIT License.
 ## Citing Samplify
 If you use the Samplify library in your research, please cite it as follows:
 
-    @misc{samplify2024,
-      title        = {Samplify: A Python Library for Sampling in Remote Sensing Datasets},
-      author       = {Kevin T. Decker},
-      year         = {2024},
-      note         = {Software accompanying an unpublished research article},
-      url          = {https://github.com/kevindckr/samplify},
-      version      = {v0.1.0}
-    }
-
-This software accompanies a research article that is currently being prepared for publication. The repository will be updated with the appropriate citation details once the article is published.
+	@article{Decker2025,
+		abstract = {Identified as early as 2000, the challenges involved in developing and assessing remote sensing models with small datasets remain, with one key issue persisting: the misuse of random sampling to generate training and testing data. This practice often introduces a high degree of correlation between the sets, leading to an overestimation of model generalizability. Despite the early recognition of this problem, few researchers have investigated its nuances or developed effective sampling techniques to address it. Our survey highlights that mitigation strategies to reduce this bias remain underutilized in practice, distorting the interpretation and comparison of results across the field. In this work, we introduce a set of desirable characteristics to evaluate sampling algorithms, with a primary focus on their tendency to induce correlation between training and test data, while also accounting for other relevant factors. Using these characteristics, we survey 146 articles, identify 16 unique sampling algorithms, and evaluate them. Our evaluation reveals two broad archetypes of sampling techniques that effectively mitigate correlation and are suitable for model development.},
+		author = {Kevin T Decker and Brett J Borghetti},
+		doi = {10.3390/RS17081373},
+		issn = {2072-4292},
+		issue = {8},
+		journal = {Remote Sensing 2025, Vol. 17, Page 1373},
+		keywords = {correlation,generalization,model assessment,remote sensing,sampling algorithm},
+		month = {4},
+		pages = {1373},
+		publisher = {Multidisciplinary Digital Publishing Institute},
+		title = {A Survey of Sampling Methods for Hyperspectral Remote Sensing: Addressing Bias Induced by Random Sampling},
+		volume = {17},
+		url = {https://www.mdpi.com/2072-4292/17/8/1373/htm https://www.mdpi.com/2072-4292/17/8/1373},
+		year = {2025}
+	}
